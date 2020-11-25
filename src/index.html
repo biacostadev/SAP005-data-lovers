@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Pokémon</title>
+  <title>Poképedia</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -13,12 +14,14 @@
     <ul class="menu">
       <li> <a href="index.html">INICIO</a> </li>
       <li> <a href="sobre.html">SOBRE</a> </li>
-      <li> <a href="curiosidades.html">CURIOSIDADE</a> </li>
+      <li> <a href="curiosidades.html">CURIOSIDADES</a> </li>
+      <li> <a href="dicas.html">DICAS</a> </li>
+      <li> <a href="https://pokemongolive.com/pt_br/">JOGUE POKÉMON GO</a> </li>
     </ul>
   </header>
 
   <div class="divimagem">
-    <img class="imagemcabecalho" src="img/pokemon-logo.png" alt="pokemon">
+    <h1 class="tituloSite">Poképedia</h1>
   </div>
 
   <main>
@@ -54,6 +57,22 @@
             <option value="flying">Voador</option>
           </select>
 
+          <select class="borda input" name="ordenar" id="ordenar">
+            <option disabled selected value="">Ordenar por:</option>
+            <option value="ordenar-az">A - Z</option>
+            <option value="ordenar-za">Z - A</option>
+            <option value="ordenarCrescente">1 - 251</option>
+            <option value="ordenarDecescente">251 - 1</option>
+          </select>
+
+          <select class="borda input" name="filterEgg" id="filterEgg">
+            <option disabled selected value="">Tipo de ovo:</option>
+            <option value="2 km">2 km</option>
+            <option value="5 km">5 km</option>
+            <option value="7 km">7 km</option>
+            <option value="10 km">10 km</option>
+          </select>
+
           <br>
 
           <button class="borda botao" id="listaCompleta">RECARREGAR POKÉMONS</button>
@@ -61,13 +80,25 @@
     </fieldset>
     </section>
 
-    <section class="regiao" id="regiao"></section>
+    <section class="caixa-porcentagem">
+      <div class="porcentagem" id="porcentagem"></div>
+    </section>
     <section class="pokemons" id="pokemons"></section>
   </main>
 
   <footer>
-    <h2 class="footer">Projeto realizado durante o bootcamp da <a>@Laboratória</a>, pelas alunas <a>Kathleen
-        Fortunato</a> e <a>Beatriz Costa</a></h2>
+    <h2 class="footer">Projeto realizado durante o <a href="http://www.laboratoria.la/br">Bootcamp Laboratória</a>, pelas alunas <a>Kathleen Fortunato</a> e <a>Bia Costa</a>.</h2>
+    <h2>Nos encontre aqui:</h2>
+    <div class="contato">
+      <div class="contato-aluna">
+        <p class="nome-aluna">Kathleen Fortunato</p>
+        <a href="http://github.com/Fortunatok">GitHub</a> | <a href="http://www.linkedin.com/in/fortunatok/">LinkedIn</a>
+      </div>
+      <div class="contato-aluna">
+        <p class="nome-aluna">Bia Costa</p>
+        <a href="http://github.com/biacostadev">GitHub</a> | <a href="http://www.linkedin.com/in/biacostadev/">LinkedIn</a>
+      </div>
+    </div>
   </footer>
 
   <script src="main.js" type="module"></script>
