@@ -5,8 +5,8 @@
 }
 
 @font-face {
-    font-family: "Pokemon";
-    src: url(../src/fonte/Pokemon-Solid.ttf);
+    font-family: font-pokemon;
+    src: url(./pokemon.ttf);
 }
 
 body {
@@ -54,7 +54,7 @@ main {
 }
 
 .tituloSite {
-    font-family: Pokemon;
+    font-family: font-pokemon;
     font-size: 6em;
     color: #FBCA39;
     letter-spacing: 0.1em;
