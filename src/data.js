@@ -1,13 +1,15 @@
 export const selectType = (listaPokemons, filtroType) =>
     (listaPokemons.filter(search => search.type.includes(filtroType)));
 
-export const selectEgg = (listaPokemons, filtroEgg) =>
-    (listaPokemons.filter(search => search.egg.includes(filtroEgg)));
-
 export const calcType = (data, filtroType) => {
     const type = data.filter(search => search.type.includes(filtroType));
     return Math.round(((type.length * 100) / data.length) * 100) / 100;
 };
+
+export const selectEgg = (listaPokemons, filtroEgg) =>
+    (listaPokemons.filter(search => search.egg.includes(filtroEgg)));
+
+
 
 export const buscarNome = (data, name) =>
     (data.filter(search => search.name.toUpperCase().includes(name.toUpperCase())));

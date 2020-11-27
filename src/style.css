@@ -4,6 +4,26 @@
     box-sizing: border-box;
 }
 
+.border-radius-25-px {
+    border-radius: 25px;
+}
+
+.height-10-vh{
+    height: 10vh;
+}
+
+.font-size-1-5-em {
+    font-size: 1.5em;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
 @font-face {
     font-family: font-pokemon;
     src: url(./pokemon.ttf);
@@ -11,24 +31,23 @@
 
 body {
     background-color: #5CCDAA;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
     background-color: rgba(8, 39, 141, 0.384);
-    height: 50px;
-    max-width: 100%;
-    padding: 0 150px;
+    max-width: 100vw;
+    padding: 0 15vw;
 }
 
 .menu {
-    display: flex;
     list-style: none;
     justify-content: space-around;
     
 }
 
 .menu li {
-    line-height: 50px;
+    line-height: 10vh;
 }
 
 .menu li a {
@@ -36,7 +55,6 @@ header {
     text-decoration: none;
     transition: 0.6s;
     font-weight: bold;
-    font-size: 20px;
 }
 
 .menu li a:hover {
@@ -44,16 +62,12 @@ header {
 }
 
 main {
-    max-width: 67%;
-    margin: 0 auto 90px;
-}
-
-.divimagem {
-    margin: 2em;
-    text-align: center;
+    max-width: 70vw;
+    margin: 0 auto 10vh;
 }
 
 .tituloSite {
+    margin: 0.5em;
     font-family: font-pokemon;
     font-size: 6em;
     color: #FBCA39;
@@ -62,51 +76,42 @@ main {
 }
 
 .borda {
-    padding: 5px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    text-align: center;
+    padding: 5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .fieldset-borda {
-    border: 8px solid #1f3466;
-    border-radius: 25px;
-    padding: 10px;
-    margin: 10px;
+    border: 0.5em solid #1f3466;
+    padding: 1em;
     background-color: rgba(255, 255, 255, 0.623);
 }
 
 .legenda-borda {
     text-align: left;
     width: auto;
-    padding: 0 10px;
-    font-size: 30px;
+    padding: 0 0.5em;
+    font-size: 2em;
     font-weight: bold;
     text-shadow: 1px -1px 0 #3E68BA;
 }
 
-.filtrosFilhos {
-    text-align: center;
-}
-
 .input {
-    height: 50px;
-    width: 150px;
-    border: solid 2px #5CCDAA;
+    width: 13vw;
+    border: solid 0.1em #5CCDAA;
     background-color: #ffffff;
-    border-radius: 25px;
     padding: 0 0.2em;
     color: #5CCDAA;
-    font-size: 20px;
 }
 
 .botao {
     border: solid 2px #1100ff;
     background-color: #0212f062;
-    border-radius: 20px;
-    padding: 10px;
+    padding: 1em;
+    margin-top: -0.1em;
     color: #000000;
-    font-size: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
     cursor: pointer;
     transition: 0.6s;
 }
@@ -119,30 +124,22 @@ main {
 
 .porcentagem {
     display: none;
-    height: 40px;
-    width: 550px;
+    width: 35vw;
     background-color: #1f3466;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 25px;
-    line-height: 40px;
+    margin: 1em auto 0;
+    line-height: 10vh;
     color: blanchedalmond;
-    border-radius: 25px;
-
 }
 
 .pokemons {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .card {
-    width: 200px;
-    height: 300px;
-    text-align: center;
-    margin: 20px 10px;
-    display: flex;
+    width: 15vw;
+    height: 50vh;
+    margin: 2em 1em 1em;
     flex-direction: column;
     perspective: 1000px;
 }
@@ -151,12 +148,12 @@ main {
     position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
 }
 
-.card:hover .flip {
+.card:hover .flip,
+.card:active .flip {
     transform: rotateY(180deg);
 }
 
@@ -168,23 +165,17 @@ main {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     background: rgb(248, 248, 255);
-    border: 1px solid transparent;
+    border: 0.2em solid transparent;
     border-radius: 10px;
-    padding: 10px;
-
+    padding: 0.5em;
 }
 
 .back-card {
     transform: rotateY(180deg);
 }
 
-.pokemon-name,
-.pokemon-num {
-    font-size: 1.5em;
-}
-
 .imagem-pokemon {
-    margin: 0 -11px;
+    margin: 0 -0.7em;
     background-color: rgba(8, 39, 141, 0.384);
 }
 
@@ -199,8 +190,10 @@ main {
 .pokemon-egg,
 .pokemon-weaknesses {
     font-size: 1.2em;
-    border-bottom: solid 1px #44696C;
+    border-bottom: solid 0.1em #44696C;
     line-height: 1.2em;
+    font-family: 'Castoro', serif;
+    margin-top: 0.1em;
 }
 
 .front-card .titulo-especificacoes{
@@ -213,11 +206,10 @@ main {
 
 footer {
     background-color: rgba(8, 39, 141, 0.384);
-    height: 100%;
-    line-height: 30px;
+    line-height: 2em;
     color: blanchedalmond;
-    font-size: 16px;
-    text-align: center;
+    font-size: 1em;
+    padding: 1em 0;
 }
 
 footer a {
@@ -227,17 +219,26 @@ footer a {
 
 .contato {
     margin: 0 auto;
-    max-width: 500px;
-    display: flex;
+    max-width: 40vw;
     justify-content: space-around;
-    text-align: center;
 }
 
 .contato .nome-aluna {
-    font-size: 24px;
     text-decoration: underline;
 }
 
-.contato a {
-    font-size: 24px;
+.texto-sobre,
+.texto-curiosidade,
+.texto-dicas {
+    font-family: 'Castoro', serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin: 1em 0;
+    padding: 0 2em;
+}
+
+.titulo-curiosidade,
+.titulo-dicas {
+    font-size: 1.7em;
+    margin: 1em 0 0 0;
 }
