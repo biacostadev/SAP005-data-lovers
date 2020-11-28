@@ -4,8 +4,13 @@
         font-size: 3.5em;
     }
 
+    .porcentagem {
+        width: 80vw;
+        font-size: 1.2em;
+    }
+
     .card {
-        height: 50vh;
+        height: 40vh;
     }
 
     .pokemon-img {
@@ -15,6 +20,15 @@
 }
 
 @media only screen and (min-device-width: 550px) {
+    header {
+        padding: 1em 0;
+    }
+    
+    .menu {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
     .botao {
         width: 60vw;
     }
@@ -42,6 +56,7 @@
 
     .card {
         width: 25vw;
+        height: 35vh;
     }
 
     .contato {
@@ -52,8 +67,11 @@
 
 @media only screen and (min-device-width: 1000px) {
     header {
-        padding: 1em 0;
         font-size: 1.3em;
+    }
+
+    .menu {
+        max-width: 1000px;
     }
 
     .menu li a {
@@ -133,6 +151,7 @@
 
     .card {
         width: 15vw;
+        height: 50vh;
     }
 
     .pokemon-name,
