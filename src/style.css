@@ -16,7 +16,7 @@ body {
 
 header {
     background-color: rgba(8, 39, 141, 0.384);
-    padding: 1em 0;
+    padding: 1em 2em;
     height: 100%;
     font-size: 1em;
 }
@@ -25,12 +25,11 @@ header {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: space-around; 
 }
 
 .menu li {
-    line-height: 7vh;
+    line-height: 2em;
 }
 
 .menu li a {
@@ -88,7 +87,7 @@ main {
 }
 
 .input {
-    height: 10vh;
+    height: 7vh;
     width: 37vw;
     border: solid 0.1em #5CCDAA;
     background-color: #ffffff;
@@ -100,7 +99,7 @@ main {
 }
 
 .botao {
-    height: 10vh;
+    height: 7vh;
     border: solid 2px #1100ff;
     background-color: #0212f062;
     color: #000000;
@@ -140,8 +139,8 @@ main {
 }
 
 .card {
-    width: 60vw;
-    height: 50vh;
+    width: 70vw;
+    height: 36vh;
     margin: 1em 0.5em 0.5em;
     flex-direction: column;
     perspective: 1000px;

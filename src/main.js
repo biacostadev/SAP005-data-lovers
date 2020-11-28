@@ -44,7 +44,6 @@ function pegarNome(){
     const nomePokemons = document.getElementById("nomePokemon").value;
     const pesquisaNome = buscarNome(data.pokemon, nomePokemons);
     pokemons(pesquisaNome);
-    limparNome();
 }
 
 const inputNum = document.getElementById("numPokemon");
@@ -54,18 +53,17 @@ function pegarNum() {
     const numPokemons = document.getElementById("numPokemon").value;
     const pesquisaNum = buscarNum(data.pokemon, numPokemons);
     pokemons(pesquisaNum);
-    limparNum();
-};
+}
 
 const selectTipo = document.getElementById("filterType");
-selectTipo.addEventListener("click", pegarTipo);
+selectTipo.addEventListener("change", pegarTipo);
 
 function pegarTipo() {
     const filtroType = document.getElementById("filterType").value;
     const filtrado = selectType(listaPokemons, filtroType);
     pokemons(filtrado);
     typePercent();
-};
+}
 
 function typePercent() {
     document.getElementById("porcentagem").innerHTML = "",
@@ -73,28 +71,27 @@ function typePercent() {
     const filtroType = document.getElementById("filterType").value;
     let result = calcType(data.pokemon, filtroType);
     document.getElementById("porcentagem").innerText += `${result}% de Pokémon são deste tipo.`
-};
+}
 
 const selectOvo = document.getElementById("filterEgg");
-selectOvo.addEventListener("click", pegarOvo);
+selectOvo.addEventListener("change", pegarOvo);
 function pegarOvo() {
     const filtroEgg = document.getElementById("filterEgg").value;
     const filtradoEgg = selectEgg(listaPokemons, filtroEgg);
     pokemons(filtradoEgg);
-};
+}
 
 const selectOrdenar = document.getElementById("ordenar");
-selectOrdenar.addEventListener("click", pegarOrdem);
+selectOrdenar.addEventListener("change", pegarOrdem);
 function pegarOrdem() {
     const filtroOrdenar = document.getElementById("ordenar").value;
     const ordered = ordenarPokemons(listaPokemons, filtroOrdenar);
     pokemons(ordered);
-};
-
+}
 
 const buttonRecarregar = document.getElementById("listaCompleta");
 buttonRecarregar.addEventListener("click", recarregar);
 function recarregar() {
     document.getElementById("porcentagem").style.display= "none";
     pokemons(listaPokemons);
-};
+}
