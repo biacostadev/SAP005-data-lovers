@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Poképedia</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,8 +14,8 @@
 
 <body>
 
-  <header class="height-10-vh font-size-1-5-em">
-    <ul class="menu display-flex">
+  <header class="font-size-1-5-em">
+    <ul class="menu">
       <li> <a href="index.html">INICIO</a> </li>
       <li> <a href="sobre.html">SOBRE</a> </li>
       <li> <a href="curiosidades.html">CURIOSIDADES</a> </li>
@@ -23,22 +24,22 @@
     </ul>
   </header>
 
-  <div class="text-align-center">
+  <div class="titulo-site">
     <h1 class="tituloSite">Poképedia</h1>
   </div>
 
   <main>
-    <fieldset class="fieldset-borda border-radius-25-px">
+    <fieldset class="fieldset-borda">
       <legend class="legenda-borda">Filtrar por:</legend>
 
-      <section class="filtros-filhos text-align-center">
+      <section class="filtros-filhos">
 
-        <input type="text" class="nomePokemon input border-radius-25-px height-10-vh font-size-1-5-em" id="nomePokemon" placeholder="Ex: Pikachu">
+        <input type="text" class="nomePokemon input" id="nomePokemon" placeholder="Ex: Pikachu">
 
 
-        <input type="number" class="numPokemon input border-radius-25-px height-10-vh font-size-1-5-em" id="numPokemon" placeholder="N.º pokémon" max="251">
+        <input type="number" class="numPokemon input" id="numPokemon" placeholder="N.º pokémon" max="251">
 
-          <select class="borda input border-radius-25-px height-10-vh font-size-1-5-em text-align-center" name="filterType" id="filterType">
+          <select class="input" name="filterType" id="filterType">
             <option disabled selected value="">Tipo:</option>
             <option value="normal">Normal</option>
             <option value="steel">Aço</option>
@@ -60,7 +61,7 @@
             <option value="flying">Voador</option>
           </select>
 
-          <select class="borda input border-radius-25-px height-10-vh font-size-1-5-em text-align-center" name="ordenar" id="ordenar">
+          <select class="input" name="ordenar" id="ordenar">
             <option disabled selected value="">Ordenar por:</option>
             <option value="ordenar-az">A - Z</option>
             <option value="ordenar-za">Z - A</option>
@@ -68,7 +69,7 @@
             <option value="ordenarDecescente">251 - 1</option>
           </select>
 
-          <select class="borda input border-radius-25-px height-10-vh font-size-1-5-em text-align-center" name="filterEgg" id="filterEgg">
+          <select class="input" name="filterEgg" id="filterEgg">
             <option disabled selected value="">Tipo de ovo:</option>
             <option value="2 km">2 km</option>
             <option value="5 km">5 km</option>
@@ -76,28 +77,30 @@
             <option value="10 km">10 km</option>
           </select>
 
-          <button class="borda botao border-radius-25-px text-align-center" id="listaCompleta">RECARREGAR POKÉMONS</button>
+          <button class="botao" id="listaCompleta">RECARREGAR POKÉMONS</button>
 
         </section>
+
+
     </fieldset>
 
     <section class="caixa-porcentagem">
-      <div class="porcentagem border-radius-25-px height-10-vh font-size-1-5-em text-align-center" id="porcentagem"></div>
+      <div class="porcentagem" id="porcentagem"></div>
     </section>
-    <section class="pokemons display-flex" id="pokemons"></section>
+    <section class="pokemons" id="pokemons"></section>
   </main>
 
-  <footer class="text-align-center">
-    <h2 class="footer">Projeto realizado durante o <a href="http://www.laboratoria.la/br" target="_blank">Bootcamp Laboratória</a>, pelas alunas <a>Kathleen Fortunato</a> e <a>Bia Costa</a>.</h2>
+  <footer>
+    <h2 class="footer">Projeto realizado durante o <a href="http://www.laboratoria.la/br" target="_blank">Bootcamp Laboratória</a>.</h2>
     <h2>Nos encontre aqui:</h2>
-    <div class="contato display-flex text-align-center">
+    <div class="contato">
       <div class="contato-aluna">
-        <p class="nome-aluna font-size-1-5-em">Kathleen Fortunato</p>
-        <a href="http://github.com/Fortunatok" class="font-size-1-5-em" target="_blank">GitHub</a> | <a href="http://www.linkedin.com/in/fortunatok/" class="font-size-1-5-em" target="_blank">LinkedIn</a>
+        <p class="nome-aluna">Kathleen Fortunato</p>
+        <a href="http://github.com/Fortunatok" target="_blank">GitHub</a> | <a href="http://www.linkedin.com/in/fortunatok/" target="_blank">LinkedIn</a>
       </div>
       <div class="contato-aluna">
-        <p class="nome-aluna font-size-1-5-em">Bia Costa</p>
-        <a href="http://github.com/biacostadev" class="font-size-1-5-em" target="_blank">GitHub</a> | <a href="http://www.linkedin.com/in/biacostadev/" class="font-size-1-5-em" target="_blank">LinkedIn</a>
+        <p class="nome-aluna">Bia Costa</p>
+        <a href="http://github.com/biacostadev" target="_blank">GitHub</a> | <a href="http://www.linkedin.com/in/biacostadev/" target="_blank">LinkedIn</a>
       </div>
     </div>
   </footer>

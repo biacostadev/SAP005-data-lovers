@@ -1,0 +1,164 @@
+@media only screen and (min-device-width: 370px) {
+    .tituloSite {
+        margin: 0.3em;
+        font-size: 3.5em;
+    }
+
+    .card {
+        height: 50vh;
+    }
+
+    .pokemon-img {
+        width: 6em;
+    }
+    
+}
+
+@media only screen and (min-device-width: 550px) {
+    .botao {
+        width: 60vw;
+    }
+
+    .porcentagem {
+        width: 60vw;
+        font-size: 1.2em;
+    }
+
+    .card {
+        width: 40vw;
+    }
+
+    .contato {
+        display: flex;
+        max-width: 70vw;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-device-width: 760px) {
+    .tituloSite {
+        font-size: 4em;
+    }
+
+    .card {
+        width: 25vw;
+    }
+
+    .contato {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-device-width: 1000px) {
+    header {
+        padding: 1em 0;
+        font-size: 1.3em;
+    }
+
+    .menu li a {
+        margin: 0 1em 0;
+    }
+    
+    .tituloSite {
+        font-size: 6em;
+    }
+
+    main {
+        max-width: 70vw;
+    }
+    
+
+    .input {
+        width: 20vw;
+        font-size: 1.2em;
+    }
+
+    .botao {
+        width: 30vw;
+    }
+
+    .porcentagem {
+        width: 50vw;
+        font-size: 1.5em;
+    }
+
+    .card {
+        width: 20vw;
+    }
+
+    .texto-sobre,
+    .texto-curiosidade,
+    .texto-dicas {
+    font-size: 1.2em;
+    padding: 0 2em;
+    }
+
+    .titulo-curiosidade,
+    .titulo-dicas {
+    font-size: 1.6em;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+
+    .contato {
+        display: flex;
+        justify-content: space-around;
+        max-width: 50vw;
+    }
+    
+    .contato .nome-aluna {
+        font-size: 1.5em;
+    }
+    
+    .contato-aluna a {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-device-width: 1100px) {
+    .input {
+        width: 12vw;
+    }
+
+    .botao {
+        width: 20vw;
+    }
+
+    .porcentagem {
+        width: 35vw;
+    }
+
+    .card {
+        width: 15vw;
+    }
+
+    .pokemon-name,
+    .pokemon-num {
+        font-size: 1.5em;
+        line-height: 1.2em;
+    }
+
+    .titulo-especificacoes {
+        font-size: 1.2em;
+    }
+
+    .pokemon-region,
+    .pokemon-type,
+    .pokemon-about,
+    .pokemon-rarity,
+    .pokemon-egg,
+    .pokemon-weaknesses {
+        font-size: 1.2em;
+    }
+
+    .front-card .titulo-especificacoes{
+        margin-top: 0.5em;
+    }
+
+    .back-card .titulo-especificacoes {
+        margin-top: 0.7em;
+    }
+}
