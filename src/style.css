@@ -16,7 +16,7 @@ body {
 
 header {
     background-color: rgba(8, 39, 141, 0.384);
-    padding: 1em 2em;
+    padding: 1em 0.5em;
     height: 100%;
     font-size: 1em;
 }
@@ -140,7 +140,7 @@ main {
 
 .card {
     width: 70vw;
-    height: 36vh;
+    height: 45vh;
     margin: 1em 0.5em 0.5em;
     flex-direction: column;
     perspective: 1000px;
@@ -206,7 +206,6 @@ main {
     font-size: 1em;
     border-bottom: solid 0.1em #44696C;
     line-height: 1.2em;
-    font-family: 'Castoro', serif;
     margin-top: 0.1em;
 }
 
