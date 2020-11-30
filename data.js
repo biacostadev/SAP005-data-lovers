@@ -1,5 +1,5 @@
 export const selectType = (listaPokemons, filtroType) =>
-    (listaPokemons.filter(search => search.type.includes(filtroType)));
+    listaPokemons.filter(search => search.type.includes(filtroType));
 
 export const calcType = (data, filtroType) => {
     const type = data.filter(search => search.type.includes(filtroType));
@@ -7,22 +7,20 @@ export const calcType = (data, filtroType) => {
 };
 
 export const selectEgg = (listaPokemons, filtroEgg) =>
-    (listaPokemons.filter(search => search.egg.includes(filtroEgg)));
-
-
+    listaPokemons.filter(search => search.egg.includes(filtroEgg));
 
 export const buscarNome = (data, name) =>
-    (data.filter(search => search.name.toUpperCase().includes(name.toUpperCase())));
+    data.filter(search => search.name.toUpperCase().includes(name.toUpperCase()));
 
 export const buscarNum = (data, num) =>
-    (data.filter(search => search.num.includes(num)));
+    data.filter(search => search.num.includes(num));
 
-const ordenarAZ = (a, b) => (a["name"]).localeCompare(b["name"]);
-const ordenarZA = (a, b) => (a["name"]).localeCompare(b["name"]);
-const ordenarCrescente = (a, b) => Number((a["num"]).localeCompare(b["num"]));
-const ordenarDecrescente = (a, b) => Number((a["num"]).localeCompare(b["num"]));
-
+    
 export const ordenarPokemons = (listaPokemons, filtroOrdenar) => {
+    const ordenarAZ = (a, b) => (a["name"]).localeCompare(b["name"]);
+    const ordenarZA = (a, b) => (a["name"]).localeCompare(b["name"]);
+    const ordenarCrescente = (a, b) => Number((a["num"]).localeCompare(b["num"]));
+    const ordenarDecrescente = (a, b) => Number((a["num"]).localeCompare(b["num"]));
     switch (filtroOrdenar) {
         case "ordenar-az":
             return listaPokemons.sort((a, b) => ordenarAZ(a, b))
