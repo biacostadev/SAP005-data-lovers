@@ -1,5 +1,7 @@
 import { selectType, calcType, buscarNome, buscarNum, ordenarPokemons, selectEgg } from './data.js';
 import data from './data/pokemon/pokemon.js';
+import { limparNome, limparNum, limparTipo, limparOvo, limparOrdem } from './limparPesquisas.js';
+
 
 const listaPokemons = data.pokemon;
 
@@ -34,7 +36,7 @@ function pokemons(lista) {
         </div>`
     }
     document.getElementById("pokemons").innerHTML = pokepoke;
-};
+}
 pokemons(listaPokemons);
 
 const inputName = document.getElementById("nomePokemon");
@@ -44,6 +46,7 @@ function pegarNome(){
     const nomePokemons = document.getElementById("nomePokemon").value;
     const pesquisaNome = buscarNome(data.pokemon, nomePokemons);
     pokemons(pesquisaNome);
+    limparNome();
 }
 
 const inputNum = document.getElementById("numPokemon");
@@ -53,6 +56,7 @@ function pegarNum() {
     const numPokemons = document.getElementById("numPokemon").value;
     const pesquisaNum = buscarNum(data.pokemon, numPokemons);
     pokemons(pesquisaNum);
+    limparNum();
 }
 
 const selectTipo = document.getElementById("filterType");
@@ -63,6 +67,7 @@ function pegarTipo() {
     const filtrado = selectType(listaPokemons, filtroType);
     pokemons(filtrado);
     typePercent();
+    limparTipo();
 }
 
 function typePercent() {
@@ -79,6 +84,7 @@ function pegarOvo() {
     const filtroEgg = document.getElementById("filterEgg").value;
     const filtradoEgg = selectEgg(listaPokemons, filtroEgg);
     pokemons(filtradoEgg);
+    limparOvo();
 }
 
 const selectOrdenar = document.getElementById("ordenar");
@@ -87,6 +93,7 @@ function pegarOrdem() {
     const filtroOrdenar = document.getElementById("ordenar").value;
     const ordered = ordenarPokemons(listaPokemons, filtroOrdenar);
     pokemons(ordered);
+    limparOrdem();
 }
 
 const buttonRecarregar = document.getElementById("listaCompleta");
