@@ -1,6 +1,6 @@
 import { selectType, calcType, buscarNome, buscarNum, ordenarPokemons, selectEgg } from './data.js';
 import data from './data/pokemon/pokemon.js';
-import { limparNome, limparNum, limparTipo, limparOvo, limparOrdem } from './limparPesquisas.js';
+import { limparNome, limparNum, limparTipo, limparOvo, limparOrdem, limparTudo } from './limparPesquisas.js';
 
 
 const listaPokemons = data.pokemon;
@@ -41,7 +41,6 @@ pokemons(listaPokemons);
 
 const inputName = document.getElementById("nomePokemon");
 inputName.addEventListener("keyup", pegarNome);
-
 function pegarNome(){
     const nomePokemons = document.getElementById("nomePokemon").value;
     const pesquisaNome = buscarNome(data.pokemon, nomePokemons);
@@ -51,7 +50,6 @@ function pegarNome(){
 
 const inputNum = document.getElementById("numPokemon");
 inputNum.addEventListener("keyup", pegarNum);
-
 function pegarNum() {
     const numPokemons = document.getElementById("numPokemon").value;
     const pesquisaNum = buscarNum(data.pokemon, numPokemons);
@@ -61,7 +59,6 @@ function pegarNum() {
 
 const selectTipo = document.getElementById("filterType");
 selectTipo.addEventListener("change", pegarTipo);
-
 function pegarTipo() {
     const filtroType = document.getElementById("filterType").value;
     const filtrado = selectType(listaPokemons, filtroType);
@@ -89,6 +86,7 @@ function pegarOvo() {
 
 const selectOrdenar = document.getElementById("ordenar");
 selectOrdenar.addEventListener("change", pegarOrdem);
+
 function pegarOrdem() {
     const filtroOrdenar = document.getElementById("ordenar").value;
     const ordered = ordenarPokemons(listaPokemons, filtroOrdenar);
@@ -101,4 +99,5 @@ buttonRecarregar.addEventListener("click", recarregar);
 function recarregar() {
     document.getElementById("porcentagem").style.display= "none";
     pokemons(listaPokemons);
+    limparTudo();
 }
