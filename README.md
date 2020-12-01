@@ -5,7 +5,6 @@
 ### Índice.
 
 * [1. Definição de produto](#definicao-do-produto)
-
 * [2. Protótipos](#prototipos)
 * [3. Historias de usuarios](#historias-de-usuarios)
 * [4. Testes de usabilidade](#testes-de-usabilidade)
@@ -27,17 +26,15 @@ O tema escolhido foi pokémon e durante as 3 semanas que trabalhamos nesse proje
 
 #### 2. Protótipos.
 
-<img src="/home/laboratoria/Área de Trabalho/projeto/SAP005-data-lovers/img-reame/desktop.jpeg" alt="desktop" style="zoom:50%;" />
+<img src="img-readme/desktop.jpeg" alt="desktop" style="zoom:50%;" />
 
-<img src="/home/laboratoria/Área de Trabalho/projeto/SAP005-data-lovers/img-reame/responsivo.jpeg" alt="responsivo" style="zoom:55%;" />
+<img src="img-readme/responsivo.jpeg" alt="responsivo" style="zoom:55%;" />
 
 #### 3. Planejamento.
 
-![trello](/home/laboratoria/Área de Trabalho/projeto/SAP005-data-lovers/img-reame/trello.png)
+<img src="img-readme/trello.png" alt="trello" />
 
 > Usamos o Trello para organizar as tarefas e o contéudo a ser estudado.
-
-
 
 ###### Historias de Usuarios.
 
@@ -45,19 +42,19 @@ Criamos três historias de usuarios baseadas em pesquisas que fizemos e seguindo
 
 > Persona 1
 
-![persona1](/home/laboratoria/Área de Trabalho/projeto/SAP005-data-lovers/img-reame/persona1.png)
+<img src="img-readme/persona1.png" alt="persona1" />
 
 ---
 
 > Persona 2
 
-![persona2](/home/laboratoria/Área de Trabalho/projeto/SAP005-data-lovers/img-reame/persona2.png)
+<img src="img-readme/persona2.png" alt="persona2" />
 
 ---
 
 > Persona 3
 
-![persona3](/home/laboratoria/Área de Trabalho/projeto/SAP005-data-lovers/img-reame/persona3.png)
+<img src="img-readme/persona3.png" alt="persona3" />
 
 #### 4. Testes de usabilidade.
 
@@ -65,7 +62,7 @@ Durante a desenvolvimento do projeto, criamos um github pages e enviamos para po
 
 #### 5. Funcionalidades da aplicação
 
-![gif](/home/laboratoria/Área de Trabalho/projeto/SAP005-data-lovers/img-reame/Poképedia .gif)
+<img src="img-readme/pokepedia.gif" alt="gif" />
 
 A página permite que o usuário faça a busca pelo nome, numero, tipo de pokémon, km e também ordenar a lista por ordem alfabética e números (ambos com ordem crescente e decrescente).
 
