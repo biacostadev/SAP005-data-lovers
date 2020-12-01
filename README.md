@@ -4,9 +4,9 @@
 
 ### Índice.
 
-* [1. Definição de produto](#definicao-do-produto)
+* [1. Definição de produto](#definicao-de-produto)
 * [2. Protótipos](#prototipos)
-* [3. Historias de usuarios](#historias-de-usuarios)
+* [3. Planejamento](#planejamento)
 * [4. Testes de usabilidade](#testes-de-usabilidade)
 * [5. Funcionalidades da aplicação](#funcionalidades-da-aplicacao)
 
