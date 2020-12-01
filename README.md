@@ -4,19 +4,19 @@
 
 ### Índice.
 
-* [1. Definição de produto](#definição-de-produto)
-* [2. Protótipos](#protótipos)
+* [1. Definição de produto](#definicaoproduto)
+* [2. Protótipos](#prototipos)
 * [3. Planejamento](#planejamento)
-* [4. Testes de usabilidade](#testes-de-usabilidade)
-* [5. Funcionalidades da aplicação](#funcionalidades-da-aplicação)
+* [4. Testes de usabilidade](#testesusabilidade)
+* [5. Funcionalidades da aplicação](#funcionalidadesaplicacao)
 
 &nbsp;
 
----
+---d
 
 &nbsp;
 
-#### 1. Definição de produto.
+#### 1. Definição de produto. <a name="definicaoproduto"></a>
 
 Este projeto foi desenvolvido por [Kathleen Fortunato](https://github.com/Fortunatok) e [Bia Costa](https://github.com/biacostadev) alunas da 5a Geração da [Laboratoria](https://github.com/Laboratoria) (SAP005).
 
@@ -24,13 +24,13 @@ O objetivo desse projeto foi trabalhar com dados (dispostos em forma de array e 
 
 O tema escolhido foi pokémon e durante as 3 semanas que trabalhamos nesse projeto nós procuramos 
 
-#### 2. Protótipos.
+#### 2. Protótipos. <a name="prototipos"></a>
 
 <img src="img-readme/desktop.jpeg" alt="desktop" style="zoom:50%;" />
 
 <img src="img-readme/responsivo.jpeg" alt="responsivo" style="zoom:55%;" />
 
-#### 3. Planejamento.
+#### 3. Planejamento. <a name="planejamento"></a>
 
 <img src="img-readme/trello.png" alt="trello" />
 
@@ -56,11 +56,11 @@ Criamos três historias de usuarios baseadas em pesquisas que fizemos e seguindo
 
 <img src="img-readme/persona3.png" alt="persona3" />
 
-#### 4. Testes de usabilidade.
+#### 4. Testes de usabilidade. <a name="testesusabilidade"></a>
 
 Durante a desenvolvimento do projeto, criamos um github pages e enviamos para possiveis usuarios, com o intuito de melhorar nosso projeto com os feedbacks recebidos sobre cores e responsividade.
 
-#### 5. Funcionalidades da aplicação
+#### 5. Funcionalidades da aplicação <a name="funcionalidadesaplicacao"></a>
 
 <img src="img-readme/pokepedia.gif" alt="gif" />
 
