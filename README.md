@@ -22,7 +22,7 @@ Este projeto foi desenvolvido por [Kathleen Fortunato](https://github.com/Fortun
 
 O objetivo desse projeto foi trabalhar com dados (dispostos em forma de array e object) e distribuí-los ao seu devido público como informações através de uma WebApp responsiva para smartphones. 
 
-O tema escolhido foi pokémon e durante as 3 semanas que trabalhamos nesse projeto nós procuramos 
+O tema escolhido foi pokémon e durante as 3 semanas que trabalhamos nesse projeto nós procuramos facilitar a vida dos usuarios, com um layout agradavel aos olhos e opções de filtros que podem deixar muito mais facil a navegação pelo site.
 
 #### 2. Protótipos. <a name="prototipos"></a>
 
