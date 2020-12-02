@@ -60,6 +60,11 @@ Criamos três historias de usuarios baseadas em pesquisas que fizemos e seguindo
 
 Durante a desenvolvimento do projeto, criamos um github pages e enviamos para possiveis usuarios, com o intuito de melhorar nosso projeto com os feedbacks recebidos sobre cores e responsividade.
 
+Algumas melhorias que decectamos foi:
+* Os filtros precisam ser limpos quando uma nova pesquisa for feita.
+* Os cards quebravam em alguns smartphones.
+* Os cards não viraram de volta ao serem clicados, precisando o usuário clicar em outro card ou em algum lugar "vazio" da tela.
+
 #### 5. Funcionalidades da aplicação <a name="funcionalidadesaplicacao"></a>
 
 <img src="img-readme/pokepedia.gif" alt="gif" />
