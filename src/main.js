@@ -2,6 +2,33 @@ import { selectType, calcType, buscarNome, buscarNum, ordenarPokemons, selectEgg
 import data from './data/pokemon/pokemon.js';
 import { limparNome, limparNum, limparTipo, limparOvo, limparOrdem, limparTudo } from './limparPesquisas.js';
 
+function sizeOfThings() {
+    var windowWidth = window.innerWidth;
+    var windowHeight = window.innerHeight;
+
+    var screenWidth = screen.width;
+    var screenHeight = screen.height;
+
+    document.querySelector('.window-size').innerHTML = windowWidth + 'x' + windowHeight;
+    document.querySelector('.screen-size').innerHTML = screenWidth + 'x' + screenHeight;
+
+};
+
+sizeOfThings();
+
+window.addEventListener('resize', function() {
+    sizeOfThings();
+    if (screenWidth < 600) {
+        console.log("Deu certo")
+    }
+});
+
+// function backFlip() {
+//     var screenWidth = screen.width;
+//     if (screenWidth < 600) {
+//         console.log("Deu certo")
+//     }
+// }
 
 const listaPokemons = data.pokemon;
 
@@ -41,7 +68,10 @@ pokemons(listaPokemons);
 
 const inputName = document.getElementById("nomePokemon");
 inputName.addEventListener("keyup", pegarNome);
+tentativa-flip-responsivo
+
 function pegarNome(){
+master
     const nomePokemons = document.getElementById("nomePokemon").value;
     const pesquisaNome = buscarNome(data.pokemon, nomePokemons);
     pokemons(pesquisaNome);
@@ -69,7 +99,7 @@ function pegarTipo() {
 
 function typePercent() {
     document.getElementById("porcentagem").innerHTML = "",
-    document.getElementById("porcentagem").style.display= "block";
+        document.getElementById("porcentagem").style.display = "block";
     const filtroType = document.getElementById("filterType").value;
     let result = calcType(data.pokemon, filtroType);
     document.getElementById("porcentagem").innerText += `${result}% de Pokémon são deste tipo.`
@@ -77,6 +107,7 @@ function typePercent() {
 
 const selectOvo = document.getElementById("filterEgg");
 selectOvo.addEventListener("change", pegarOvo);
+
 function pegarOvo() {
     const filtroEgg = document.getElementById("filterEgg").value;
     const filtradoEgg = selectEgg(listaPokemons, filtroEgg);
@@ -96,8 +127,9 @@ function pegarOrdem() {
 
 const buttonRecarregar = document.getElementById("listaCompleta");
 buttonRecarregar.addEventListener("click", recarregar);
+
 function recarregar() {
-    document.getElementById("porcentagem").style.display= "none";
+    document.getElementById("porcentagem").style.display = "none";
     pokemons(listaPokemons);
     limparTudo();
 }
