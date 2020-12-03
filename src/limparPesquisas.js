@@ -36,3 +36,12 @@ export const limparOrdem = () => {
     document.getElementById("porcentagem").style.display= "none";
     document.getElementById("filterEgg").value = "";
 }
+
+export const  limparTudo = () => {
+    document.getElementById("nomePokemon").value = "";
+    document.getElementById("numPokemon").value = "";
+    document.getElementById("filterType").value = "";
+    document.getElementById("porcentagem").style.display= "none";
+    document.getElementById("filterEgg").value = "";
+    document.getElementById("ordenar").value = "";
+}

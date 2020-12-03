@@ -205,7 +205,7 @@ describe('testar buscar nome', () => {
     expect(typeof buscarNome).toBe('function');
   });
 
-  it('retorna nome', () => {
+  it('retorna busca por nome', () => {
     const nome = "pic";
     expect(buscarNome(pokemonTeste, nome)).toStrictEqual(pichu);
   });
@@ -216,7 +216,7 @@ describe('testar buscar número', () => {
     expect(typeof buscarNum).toBe('function');
   });
 
-  it('retorna nome', () => {
+  it('retorna busca por número', () => {
     const num = "78";
     expect(buscarNum(pokemonTeste, num)).toStrictEqual(rapidash);
   });
