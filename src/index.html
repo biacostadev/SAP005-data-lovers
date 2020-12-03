@@ -2,44 +2,50 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Poképedia</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="responsivo.css">
-  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poképedia</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsivo.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
-  <header class="font-size-1-5-em">
-    <ul class="menu">
-      <li> <a href="index.html">INICIO</a> </li>
-      <li> <a href="sobre.html">SOBRE</a> </li>
-      <li> <a href="curiosidades.html">CURIOSIDADES</a> </li>
-      <li> <a href="dicas.html">DICAS</a> </li>
-      <li> <a href="https://pokemongolive.com/pt_br/" target="_blank">JOGUE POKÉMON GO</a> </li>
-    </ul>
-  </header>
+    <!-- <h3>Window size is <span class="window-size"></span></h3>
+    <p>Knowing this number you can make decisions based in breakpoints of window.</p>
+    <hr>
+    <h3>Screen size is <span class="screen-size"></span></h3>
+    <p>Here you have an idea of device screen size. </p> -->
 
-  <div class="titulo-site">
-    <h1 class="tituloSite">Poképedia</h1>
-  </div>
+    <header class="font-size-1-5-em window-size screen-size">
+        <ul class="menu">
+            <li> <a href="index.html">INICIO</a> </li>
+            <li> <a href="sobre.html">SOBRE</a> </li>
+            <li> <a href="curiosidades.html">CURIOSIDADES</a> </li>
+            <li> <a href="dicas.html">DICAS</a> </li>
+            <li> <a href="https://pokemongolive.com/pt_br/" target="_blank">JOGUE POKÉMON GO</a> </li>
+        </ul>
+    </header>
 
-  <main>
-    <fieldset class="fieldset-borda">
-      <legend class="legenda-borda">Filtrar por:</legend>
+    <div class="titulo-site">
+        <h1 class="tituloSite">Poképedia</h1>
+    </div>
 
-      <section class="filtros-filhos">
+    <main>
+        <fieldset class="fieldset-borda">
+            <legend class="legenda-borda">Filtrar por:</legend>
 
-        <input type="text" class="nomePokemon input" id="nomePokemon" placeholder="Ex: Pikachu">
+            <section class="filtros-filhos">
+
+                <input type="text" class="nomePokemon input" id="nomePokemon" placeholder="Ex: Pikachu">
 
 
-        <input type="number" class="numPokemon input" id="numPokemon" placeholder="N.º pokémon" max="251">
+                <input type="number" class="numPokemon input" id="numPokemon" placeholder="N.º pokémon" max="251">
 
-          <select class="input" name="filterType" id="filterType">
+                <select class="input" name="filterType" id="filterType">
             <option disabled selected value="">Tipo:</option>
             <option value="normal">Normal</option>
             <option value="steel">Aço</option>
@@ -61,7 +67,7 @@
             <option value="flying">Voador</option>
           </select>
 
-          <select class="input" name="ordenar" id="ordenar">
+                <select class="input" name="ordenar" id="ordenar">
             <option disabled selected value="">Ordenar por:</option>
             <option value="ordenar-az">A - Z</option>
             <option value="ordenar-za">Z - A</option>
@@ -69,7 +75,7 @@
             <option value="ordenarDecescente">251 - 1</option>
           </select>
 
-          <select class="input" name="filterEgg" id="filterEgg">
+                <select class="input" name="filterEgg" id="filterEgg">
             <option disabled selected value="">Tipo de ovo:</option>
             <option value="2 km">2 km</option>
             <option value="5 km">5 km</option>
@@ -77,35 +83,35 @@
             <option value="10 km">10 km</option>
           </select>
 
-          <button class="botao" id="listaCompleta">RECARREGAR POKÉMONS</button>
+                <button class="botao" id="listaCompleta">RECARREGAR POKÉMONS</button>
 
+            </section>
+
+
+        </fieldset>
+
+        <section class="caixa-porcentagem">
+            <div class="porcentagem" id="porcentagem"></div>
         </section>
+        <section class="pokemons" id="pokemons"></section>
+    </main>
 
+    <footer>
+        <h2 class="footer">Projeto realizado durante o <a href="http://www.laboratoria.la/br" target="_blank">Bootcamp Laboratória</a>.</h2>
+        <h2>Nos encontre aqui:</h2>
+        <div class="contato">
+            <div class="contato-aluna">
+                <p class="nome-aluna">Kathleen Fortunato</p>
+                <a href="http://github.com/Fortunatok" target="_blank">GitHub</a> | <a href="http://www.linkedin.com/in/fortunatok/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="contato-aluna">
+                <p class="nome-aluna">Bia Costa</p>
+                <a href="http://github.com/biacostadev" target="_blank">GitHub</a> | <a href="http://www.linkedin.com/in/biacostadev/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 
-    </fieldset>
-
-    <section class="caixa-porcentagem">
-      <div class="porcentagem" id="porcentagem"></div>
-    </section>
-    <section class="pokemons" id="pokemons"></section>
-  </main>
-
-  <footer>
-    <h2 class="footer">Projeto realizado durante o <a href="http://www.laboratoria.la/br" target="_blank">Bootcamp Laboratória</a>.</h2>
-    <h2>Nos encontre aqui:</h2>
-    <div class="contato">
-      <div class="contato-aluna">
-        <p class="nome-aluna">Kathleen Fortunato</p>
-        <a href="http://github.com/Fortunatok" target="_blank">GitHub</a> | <a href="http://www.linkedin.com/in/fortunatok/" target="_blank">LinkedIn</a>
-      </div>
-      <div class="contato-aluna">
-        <p class="nome-aluna">Bia Costa</p>
-        <a href="http://github.com/biacostadev" target="_blank">GitHub</a> | <a href="http://www.linkedin.com/in/biacostadev/" target="_blank">LinkedIn</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="main.js" type="module"></script>
+    <script src="main.js" type="module"></script>
 </body>
 
 </html>
