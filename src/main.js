@@ -2,34 +2,6 @@ import { selectType, calcType, buscarNome, buscarNum, ordenarPokemons, selectEgg
 import data from './data/pokemon/pokemon.js';
 import { limparNome, limparNum, limparTipo, limparOvo, limparOrdem, limparTudo } from './limparPesquisas.js';
 
-function sizeOfThings() {
-    var windowWidth = window.innerWidth;
-    var windowHeight = window.innerHeight;
-
-    var screenWidth = screen.width;
-    var screenHeight = screen.height;
-
-    document.querySelector('.window-size').innerHTML = windowWidth + 'x' + windowHeight;
-    document.querySelector('.screen-size').innerHTML = screenWidth + 'x' + screenHeight;
-
-};
-
-sizeOfThings();
-
-window.addEventListener('resize', function() {
-    sizeOfThings();
-    if (screenWidth < 600) {
-        console.log("Deu certo")
-    }
-});
-
-// function backFlip() {
-//     var screenWidth = screen.width;
-//     if (screenWidth < 600) {
-//         console.log("Deu certo")
-//     }
-// }
-
 const listaPokemons = data.pokemon;
 
 function pokemons(lista) {
@@ -68,10 +40,8 @@ pokemons(listaPokemons);
 
 const inputName = document.getElementById("nomePokemon");
 inputName.addEventListener("keyup", pegarNome);
-tentativa-flip-responsivo
 
 function pegarNome(){
-master
     const nomePokemons = document.getElementById("nomePokemon").value;
     const pesquisaNome = buscarNome(data.pokemon, nomePokemons);
     pokemons(pesquisaNome);

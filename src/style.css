@@ -156,10 +156,6 @@ main {
     transform-style: preserve-3d;
 }
 
-.back-flip {
-    transform: rotateY(180deg);
-}
-
 .card:hover .flip,
 .card:active .flip {
     transform: rotateY(180deg);
